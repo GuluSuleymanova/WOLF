@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+}
+
+.container .my-animate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translate(300px);
+          transform: translate(300px);
+}
+
+.container .my-animate .box {
+  width: 300px;
+  height: 100vh;
+  background-color: #0f0f0b;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.container .my-animate button {
+  width: 40px;
+  height: 40px;
+  border-color: red;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background: #0f0f0b;
+  color: #fd7506;
+}
+
+.container .my-animate button:hover {
+  background-color: #fd7506;
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.container ul {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 70px;
+  padding-left: 0;
+}
+
+.container ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.container ul li:hover {
+  background-color: #fd7506;
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: #ffffff !important;
+}
+
+.get {
+  -webkit-transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
+}
+
+.color {
+  background-color: #0c0505 !important;
+  opacity: 0.6;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

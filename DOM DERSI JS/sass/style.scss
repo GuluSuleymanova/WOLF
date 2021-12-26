@@ -1,0 +1,209 @@
+.red1{
+    background-color: red !important;
+}
+.yellow1{
+    background-color: yellow !important;
+    
+}
+.car-go{
+    transform: translateX(10px) !important;
+    transition: 1s !important;
+}
+.car-go-gr{
+    transform: translateX(1300px) !important;
+}
+.green1{
+    background-color: green !important;
+}
+.dark-mode{
+    background-color: #000 !important;
+}
+.dark-mode1{
+    background-color: #5f092d !important;
+}
+.dark-road1{
+    background-color: #858282 !important;
+}
+.moon-go{
+    transform:translateX(900px) !important;
+    opacity: 1 !important;
+    transition: 10s !important;
+}
+.sun-go{
+    transform:translateX(-800px) !important;
+    opacity: 0 !important;
+    transition: 10s !important;
+}
+
+body{
+    margin: 0;
+
+    .container{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-color: rgb(201, 197, 197);
+        transition: 1s;
+
+        #moon{
+            position: absolute;
+            top: 60px;
+            left: -700px;
+            transition: 10s;
+            i{
+                font-size: 100px;
+                color: 	#F4F6F0;
+            }
+        }
+
+        #sun{
+            position: absolute;
+            top: 10px;
+            right: 0;
+            transition: 10s;
+            i{
+                font-size: 100px;
+                color: 	#d5f135;
+            }
+        }
+
+        .sec1-isiqfor{
+            top: 40px;
+            position: relative;
+            width:100% ;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            
+            .isiqfor-head{
+                width: 70px;
+                height: 125px;
+                background-color: black;
+                margin: 5px 10px 0px 0px;
+                border-radius: 40%;
+                display: flex;
+                flex-direction: column;
+
+                .red{
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #fff;
+                    transform: translateX(52%);
+                    margin-top: 8px;
+                    background-color: #3f3f3f;
+                    border-radius: 50%;
+
+                }
+                .yellow{
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #fff;
+                    transform: translateX(52%);
+                    margin-top: 8px;
+                    background-color: #3f3f3f;
+                    border-radius: 50%;
+                }
+                .green{
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #fff;
+                    transform: translateX(52%);
+                    margin-top: 8px;
+                    background-color: #3f3f3f;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .isiqfor-middle{
+                position: absolute;
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                width: 100px;
+                right: 580px;
+
+                .yazi{
+                    border-radius: 20px;
+                    background-color: rgb(147, 89, 201);
+                    padding: 0 20px;
+                    
+
+                    i{
+                        color: rgb(90, 69, 54);
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            .isiqfor-footer{
+                height: 200px;
+                width: 20px;
+                background-color: black;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                position: absolute;
+                transform: translateX(125%);
+
+
+
+            }
+
+
+        }
+    
+     .sec2-road{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: cadetblue;
+        margin-bottom: 10px;
+        transform: translateY(40px);
+        
+        .road{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+
+            .box{
+                width: 100px;
+                height: 50px;
+                background-color: white;
+                
+            }
+            
+            
+            
+        }
+        .car{
+            position: absolute;
+            align-items: center;
+            display: flex;
+            transition: 8s !important;
+        
+            
+            i{
+                position: absolute;
+                align-items: center;
+                font-size: 50px;
+                color: #5f092d;
+                display: flex;
+                transform: translateY(200%);
+            }
+        }
+     }
+     .button-zone{
+         transform: translateY(40px);
+     }
+
+    }  
+}

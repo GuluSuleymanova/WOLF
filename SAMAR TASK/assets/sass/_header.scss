@@ -1,0 +1,125 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+
+ }
+.header{
+    background-color: #fafaff;
+     
+    
+
+ .container{
+   @include container-all;
+
+    img{
+        width: 150px;
+        height: 47px;
+    }
+
+    .navbar-nav{
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Poppins',sans-serif;
+       
+
+        .nav-link{
+            color: #262f5a;
+            padding: 35px 15px;
+        }
+
+        .dropdown-menu{
+            margin-top: 0px;
+            background-color: #fff;
+            left: 0;
+            padding: 5px 0px;
+            width: 220px;
+            border-radius: 0;
+            // transition: 3s;
+            box-shadow: 0;
+
+            .dropdown-item{
+                color: #262f5a;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: 'Poppins',sans-serif;
+                padding: 10px 25px;
+                transition: all .5s;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 1px;
+                    background: #896eff;
+                    left: 20px;
+                    top: 20px;
+                    transition: all 1s;
+                }
+                
+                &:hover{
+                    background-color: #f2f2f2;
+                    padding: 10px 20px 10px 35px;
+                    color: #896eff;
+                    transition: all .5s linear;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 1px;
+                        background: #896eff;
+                        left: 20px;
+                        top: 20px;
+                        transition: all 1s;
+
+                    }
+                   
+                  }
+            }
+
+            
+
+
+        }
+
+        .icon-link{
+        @include learn-more-link;
+         padding-top: 20px;
+         padding-bottom: 25px;
+
+       .nav-icon{
+        @include learn-more-icon;
+
+       } 
+     }
+    }
+}
+  }
+// i:hover{
+//     &::before{
+//     animation: toLeftFromRight .5s forwards;
+//     // animation-duration: 0.5s;
+//     // animation-timing-function: ease;
+//     // animation-delay: 0s;
+//     // animation-iteration-count: 1;
+//     // animation-direction: normal;
+//     // animation-fill-mode: forwards;
+//     // animation-play-state: running;
+//     // animation-name: toLeftFromRight;
+//       }
+//     }
+// @keyframes toLeftFromRight {
+//     49% {
+//         transform: translateX(100%)
+//     }
+
+//     50% {
+//         opacity: 0;
+//         transform: translateX(-100%)
+//     }
+
+//     51% {
+//         opacity: 1
+//     }
+// }

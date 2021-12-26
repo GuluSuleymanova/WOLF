@@ -1,0 +1,37 @@
+.sec2{
+    padding-top: 100px;
+
+    .home-slider-item{
+        height: 100px;
+        width: 170px;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        &:hover{
+            background-color: #896eff;
+            border-radius: 10px;
+            transition: all .5s;
+        
+        }
+
+        img{
+            width: 100%;
+            margin: auto;
+
+            &:hover{
+                //filter: blur(4px);
+                filter: brightness(1);
+                filter: contrast(200%);
+                //filter: grayscale(100%);
+                //filter: hue-rotate(180deg);
+                //filter: invert(100%);
+                filter: opacity(80%);
+                filter: saturate(300);
+                filter: sepia(400%);
+                //filter: drop-shadow(8px 8px 10px rgb(242, 245, 242));
+
+            }
+        }
+
+    }
+}

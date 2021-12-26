@@ -1,0 +1,118 @@
+.sec1{
+    padding-top: 150px;
+    background-image: url('/assets/img/sec1-bg.png');
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        @include container-all;
+    
+
+
+
+    .text-box{
+        .sub-title{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #896eff;
+            font-family: 'Source Sans Pro',sans-serif;
+            
+        }
+        .title-1{
+            margin-bottom: 20px;
+            font-family: 'Source Sans Pro',sans-serif;
+            font-weight: 700;
+            color: #1f2471;
+            font-size: 54px;
+
+                .text-color{
+                    color: #896eff;
+                }
+        }
+        .parag{
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #505489;
+            font-size: 15px;
+            font-family: 'Poppins',sans-serif;
+        }
+        .icon-link{
+            @include learn-more-link;
+
+                .nav-icon{
+                   @include learn-more-icon;
+                }
+        }
+    }
+    
+    .images{
+        position: relative;
+        .move-1{
+            position: inherit;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: move1;
+        }
+
+        @keyframes move1 {
+            0% {
+                    transform: rotate(-3deg) translate(-3px,-3px)
+            }
+    
+            50% {
+                    transform: rotate(3deg) translate(3px,3px)
+            }
+    
+            to {
+                    transform: rotate(-3deg) translate(-3px,-3px)
+            }
+            
+        }
+
+
+        .move-2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: move2;
+        }
+
+     @keyframes move2 {
+         0%{
+             transform: rotate(2deg) translate(2px,2px);
+         }
+
+         50%{
+             transform: rotate(-2deg) translate(-2px,2px);
+         }
+         to{
+             transform: rotate(2deg) translate(2px,2px);
+         }
+         
+     }
+    }
+}
+}

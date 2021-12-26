@@ -1,0 +1,92 @@
+.sec3{
+    background-image: url('/assets/img/bgsec3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #896eff !important;
+
+    .container{
+       @include container-all;
+    
+    .cols-box{
+        transition: all .5s;
+
+        &:hover{
+            transform: translateY(-10px);
+            transition: all .5s;
+        }
+
+        .child-2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .icon-bx{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.1);
+            padding: 30px;
+            transition: all .5s;
+            text-align: center;
+
+            .icon1,.icon2,.icon3,.icon4{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                border-radius: 100%;
+                background-color: #029e76;
+                box-shadow: 0 2px 15px rgba(2, 158, 118, 0.5);
+                text-align: center;
+                margin:0 auto 20px auto;
+
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                    vertical-align: middle;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            .icon2{
+                background-color: #ffa808;
+                box-shadow: 0 2px 15px rgba(255, 168, 8, 0.5);
+    
+    
+    
+            }
+            .icon3{
+                background-color: #5543d1;
+                box-shadow: 0 2px 15px rgba(85, 67, 209, 0.5);
+    
+            }
+            .icon4{
+                background-color: #ff586e;
+                box-shadow: 0 2px 15px rgba(255, 88, 110, 0.5);
+    
+            }
+
+            .icon-text{
+                overflow: hidden;
+                .title{
+                    font-size: 20px;
+                    color: #262f5a;
+                    font-weight: 500;
+                    font-family: 'Poppins',sans-serif;
+                }
+
+                h2{
+                    margin-bottom: 0;
+                    color: #896eff!important;
+                    font-family:' Source Sans Pro',sans-serif;
+                    font-weight: 700;
+                    font-size: 38px;
+                }
+            }
+
+        }
+    }
+    
+}
+}
